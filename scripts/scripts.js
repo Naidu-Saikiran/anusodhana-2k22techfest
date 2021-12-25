@@ -115,7 +115,7 @@ $('document').ready(() => {
         submitBtn.disabled = true
         submitBtn.innerHTML = "Sending...";
         $.ajax({
-            url: "anusodhana2k22@gmail.com",
+            url: "https://formspree.io/f/xayvnybg",
             method: "POST",
             data: {
                 name: name.value,
