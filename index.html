@@ -872,7 +872,10 @@
         const photoUrl = 'https://drive.google.com/open?id=1Td5-xu8I70A_JRKNa-g7SKywqua-g6Wi';
         const QuizUrl = 'https://drive.google.com/open?id=1yPZypm1d6kkrBSFiUJAIUOqrr8MOuPHX';
         const treasureRules=""
-        const eventDate = '21.01.2022 and 22.01.2022';
+        const eventDate = '21.01.2022 or 22.01.2022';
+        [...document.getElementsByClassName('dateEvent')].forEach(e => {
+            e.innerHTML = eventDate;
+        });
 
         document.getElementById('mockBtn').onclick = () => window.open(mockInterviewUrl, '_blank');
         document.getElementById('modelBtn').onclick = () => window.open(modelexpoUrl, '_blank');
@@ -881,6 +884,8 @@
         document.getElementById('photoBtn').onclick = () => window.open(photoUrl, '_blank');
         document.getElementById('quizBtn').onclick = () => window.open(QuizUrl, '_blank');
         document.getElementById("huntBtn").onclick=()=>window.open(treasureRules,"_blank");
+
+
         document.getElementById("modelexpo").onclick= () =>window.open(modelexporegisterUrl,"_blank");
         document.getElementById("mock").onclick= ()=>window.open(mockUrl,"_blank");
         document.getElementById("startup").onclick= ()=>window.open(startupUrl,"_blank");
@@ -888,9 +893,7 @@
         document.getElementById("quiz").onclick=()=>window.open(quizUrl,"_blank");
         document.getElementById("treasure").onclick=()=>window.open(treasureUrl,"_blank");
         document.getElementById("photo").onclick=()=>window.open(photographyUrl,"_blank");
-        [...document.getElementsByClassName('dateEvent')].forEach(e => {
-            e.innerHTML = eventDate;
-        });
+       
     </script>
 
 </body>
