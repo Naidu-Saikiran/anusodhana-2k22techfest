@@ -1201,6 +1201,7 @@
         const filmUrl = 'https://drive.google.com/open?id=1ce5Z3hqNUSCdbCC8aCeMFEGsiuJ0avhL';
         const photoUrl = 'https://drive.google.com/open?id=1Td5-xu8I70A_JRKNa-g7SKywqua-g6Wi';
         const QuizUrl = 'https://drive.google.com/open?id=1yPZypm1d6kkrBSFiUJAIUOqrr8MOuPHX';
+        const codeRules="https://1drv.ms/w/s!Al4NL2Y8BvtriiH90VEeIFWrNLn9";
         const treasureRules=""
         const eventDate = '21.01.2022 or 22.01.2022';
         [...document.getElementsByClassName('dateEvent')].forEach(e => {
@@ -1214,6 +1215,7 @@
         document.getElementById('photoBtn').onclick = () => window.open(photoUrl, '_blank');
         document.getElementById('quizBtn').onclick = () => window.open(QuizUrl, '_blank');
         document.getElementById("huntBtn").onclick=()=>window.open(treasureRules,"_blank");
+        document.getElementById("codeBtn").onclick=()=>window.open(codeRules,"_blank");
 
 
         document.getElementById("modelexpo").onclick= () =>window.open(modelexporegisterUrl,"_blank");
